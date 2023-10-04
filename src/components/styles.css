@@ -1,5 +1,12 @@
+@font-face {
+  font-family: butlerBold;
+  src: url('../fonts/Butler-Bold.woff2');
+}
 
- 
+h1, h2, h3, h4, h5 {
+  font-family: "butlerBold", Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
 fieldset {border:none;}
 .lessEmphasis {
     color: var(--gray-600);
