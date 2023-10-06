@@ -1,4 +1,4 @@
-import "./styles.css";
+import "../styles.css";
 import React from "react";
 // import { createRoot } from "react-dom/client";
 import { Formik, Field, Form, ErrorMessage } from "formik";
@@ -19,7 +19,7 @@ const initialValues = {
   bookTitle: "",
   bookAuthor: "",
   bookISBN: "",
-  bookChapterTitle: "",
+  bookChapterChapterTitle: "",
   bookChapterAuthor: "",
   bookChapterBookTitle: "",
   bookChapterISBN: "",
@@ -101,8 +101,8 @@ const onSubmit = async (values) => {
       value: values.bookChapterAuthor,
       display: "Chapter Author",
     };
-    dataPackage.requestDetails.bookChapterTitle = {
-      value: values.bookChapterTitle,
+    dataPackage.requestDetails.bookChapterChapterTitle = {
+      value: values.bookChapterChapterTitle,
       display: "Chapter Title",
     };
     dataPackage.requestDetails.bookChapterISBN = {
@@ -382,10 +382,10 @@ const InterlibraryLoanForm = () => (
                   name="bookChapterAuthor"
                   type="text"
                 />
-                <label htmlFor="bookChapterTitle">Chapter Title</label>
+                <label htmlFor="bookChapterChapterTitle">Chapter Title</label>
                 <Field
-                  id="bookChapterTitle"
-                  name="bookChapterTitle"
+                  id="bookChapterChapterTitle"
+                  name="bookChapterChapterTitle"
                   type="text"
                 />
 
