@@ -66,7 +66,7 @@ const onSubmit = async (values) => {
     display: "Borrower Type",
   };
   dataPackage.additionalInformation = {
-    value: values?.additionalInformation || "",
+    value: values.additionalInformation,
     display: "Additional Information",
   };
   dataPackage.requestDetails.materialType = values.materialType;
