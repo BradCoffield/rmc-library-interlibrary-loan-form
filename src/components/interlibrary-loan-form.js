@@ -228,8 +228,7 @@ const onSubmit = async (values) => {
 
 const InterlibraryLoanForm = () => (
   <div>
-    <h2>Interlibrary Loan Form</h2>
-    <Formik
+     <Formik
       initialValues={initialValues}
       validationSchema={SignInSchema}
       onSubmit={onSubmit}
