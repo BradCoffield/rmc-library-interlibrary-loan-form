@@ -35,6 +35,7 @@ const initialValues = {
   dissertationAuthor: "",
   dissertationAdditionalInfo: "",
   otherMaterialRequestInfo: "",
+  otherRequestInformation: "",
 };
 
 const SignInSchema = Yup.object().shape({
@@ -171,8 +172,8 @@ const onSubmit = async (values) => {
       value: "Other",
       display: "Other",
     };
-    dataPackage.requestDetails.otherMaterialRequestInfo = {
-      value: values.otherMaterialRequestInfo,
+    dataPackage.requestDetails.otherRequestInformation = {
+      value: values.otherRequestInformation,
       display: "Request Information",
     };
   }
@@ -488,12 +489,12 @@ const InterlibraryLoanForm = () => (
               <fieldset className="fieldGroup">
                 <h4>Request for Other Materials</h4>
 
-                <label htmlFor="otherMaterialRequestInfo">
+                <label htmlFor="otherRequestInformation">
                   Request Information
                 </label>
                 <Field
-                  id="otherMaterialRequestInformation"
-                  name="otherMaterialRequestInformation"
+                  id="otherRequestInformation"
+                  name="otherRequestInformation"
                   as="textarea"
                 />
               </fieldset>
